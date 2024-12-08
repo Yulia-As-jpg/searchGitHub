@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+    font-family: "roboto", "Arial", sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 660px;
+    height: 763px;
+    background-color: #C4C4C4;
+    padding: 62px 84px 72px 77px;
+    margin: 0 auto;
+}
+
+#repo-input {
+    width: 500px;
+    height: 61px;
+    font-weight: 400;
+    font-size: 48px;
+    color: #000000;
+    padding: 5px 0 0 13px;
+}
+
+.suggestions {
+    border: 1px solid #ccc;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 45px 0;
+}
+
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid #000000;
+    background-color: #E3E3E3;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35.16px;
+}
+
+ .suggestions li:hover {
+    background-color: #65CDF9;
+    transition: background-color 0.3s;
+} 
+
+.repo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.repo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: #E27BEB;
+    border: 2px solid #000000;
+    height: 101px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.13px;
+}
+
+.remove-btn {
+    all: unset;
+    position: relative;
+
+}
+
+.remove-btn::after {
+    content: '';
+    width: 4px;
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    right: 30px;
+    rotate: 220deg;
+    background-color: #FF0000;
+    cursor: pointer;
+}
+
+.remove-btn::before {
+    content: '';
+    width: 4px;
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    right: 30px;
+    rotate: 140deg;
+    background-color: #FF0000;
+    cursor: pointer;
+}
